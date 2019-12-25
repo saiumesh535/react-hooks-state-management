@@ -25,11 +25,26 @@ function ShowAndAdd() {
         })
     }
 
+    function RemoveName() {
+        dispatch({
+            type: 'REMOVE_NAME',
+            payload: name
+        })
+    }
+
+    function ResetNames() {
+        dispatch({
+            type: 'RESET_NAME'
+        })
+    }
+
     return (
         <Fragment>
             <p>Add name</p>
             <input value={name} onChange={(e) => setName(e.target.value)}  type="text"/>
             <button onClick={AddName}>Add Name</button>
+            <button onClick={RemoveName}>Remove Name</button>
+            <button onClick={ResetNames}>Reset Name</button>
         </Fragment>
     )
 }
