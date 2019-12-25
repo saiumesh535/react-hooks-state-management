@@ -27,6 +27,7 @@ function UseReducer() {
 
     return (
         <Fragment>
+            <h1>This is useReducer example</h1>
             <p>Counter Input</p>
             <input
                 onChange={(e) => setCounterInput(Number(e.target.value))}
