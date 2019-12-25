@@ -4,6 +4,7 @@ import UseStateComponent from './usestate/usestate.component';
 import UseReducer from './useReducer/usereduer.component';
 import ContextProvider from './useContext/usecontext.component';
 import AdvContextConsumer from './useContext/advanced/advanced.context.component';
+import NamesConsumer from './state/names/names.components';
 
 const App: React.FC = () => {
   return (
@@ -19,6 +20,9 @@ const App: React.FC = () => {
       </div>
       <div className="adv__context">
         <AdvContextConsumer />
+      </div>
+      <div className="state__example">
+        <NamesConsumer />
       </div>
     </div>
   );
